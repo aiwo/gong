@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Гонг</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+        }
+        img {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <img id="gong" src="istockphoto-184263033-612x612.jpg" alt="Gong">
+    <audio id="sound" src="spooky-gongwav-14904.mp3" preload="auto"></audio>
+    <script>
+        document.getElementById('gong').addEventListener('click', function () {
+            document.getElementById('sound').play();
+        });
+    </script>
+</body>
+</html>
